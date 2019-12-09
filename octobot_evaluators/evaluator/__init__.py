@@ -27,4 +27,4 @@ try:
     from tentacles.Evaluator.Strategies import *
     from tentacles.Evaluator.TA import *
 except ModuleNotFoundError as e:
-    get_logger().error(f"tentacles folder not found raised a ModuleNotFoundError exception : {e}")
+    get_logger("Evaluators").error(f"tentacles folder not found raised a ModuleNotFoundError exception : {e}")
